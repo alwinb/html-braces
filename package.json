@@ -1,0 +1,26 @@
+{
+  "name": "html-braces",
+  "version": "0.4.0",
+  "description": "An html aware homoiconic template engine",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "html-lexer": ">=0.1.0"
+  },
+  "keywords": [
+    "template-engine",
+    "template engine",
+    "templates",
+    "html",
+    "lexer",
+    "tokenizer",
+		"parser",
+		"homoiconic",
+		"escaping",
+		"s-expressions"
+  ],
+  "author": "Alwin Blok",
+  "license": "MIT"
+}
