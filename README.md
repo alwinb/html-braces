@@ -1,7 +1,7 @@
 Safe HTML-aware Template Engine
 ================================
 
-Html-braces a safe, html-aware template engine. 
+Html-braces is a safe, html-aware template engine. 
 
 * It automatically escapes the input in a mannar that is appropriate for the html context in which template placeholders appear. 
 
