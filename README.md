@@ -1,7 +1,7 @@
-HTML-aware, Homoiconic Template Engine
-======================================
+Safe HTML-aware Template Engine
+================================
 
-Html-braces an html-aware, homoiconic template engine. 
+Html-braces a safe, html-aware template engine. 
 
 * It automatically escapes the input in a mannar that is appropriate for the html context in which template placeholders appear. 
 
