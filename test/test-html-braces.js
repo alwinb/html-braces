@@ -13,7 +13,7 @@ function test (fn, title, samples) {
 }
 
 function tokenize (str) {
-	return new Lexer (str).all()
+  return new Lexer (str).toArray()
 }
 
 function parse (str) {
