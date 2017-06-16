@@ -1,6 +1,11 @@
 Safe HTML-aware Template Engine
 ================================
 
+[![Dependencies][deps-image]][deps-url] 
+[![devDependencies][dev-deps-image]][dev-deps-url] 
+[![NPM version][npm-image]][npm-url] 
+
+
 Html-braces is a safe, html-aware template engine. 
 
 * It automatically escapes the input in a mannar that is appropriate for the html context in which template placeholders appear. 
@@ -107,3 +112,10 @@ Limitations
 * PLAINTEXT data is not supported. This is only used in the deprecated html `<plaintext>` tag anyway. 
 
 
+
+[npm-image]:      https://img.shields.io/npm/v/html-braces.svg
+[npm-url]:        https://npmjs.org/package/html-braces
+[deps-image]:     https://img.shields.io/david/alwinb/html-braces.svg
+[deps-url]:       https://david-dm.org/alwinb/html-braces
+[dev-deps-image]: https://img.shields.io/david/dev/alwinb/html-braces.svg
+[dev-deps-url]:   https://david-dm.org/alwinb/html-braces?type=dev
