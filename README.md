@@ -1,10 +1,7 @@
 Safe HTML-aware Template Engine
 ================================
 
-[![Dependencies][deps-image]][deps-url] 
-[![devDependencies][dev-deps-image]][dev-deps-url] 
-[![NPM version][npm-image]][npm-url] 
-
+***Warning*** This is an old project that is no longer under development. I am leaving it up here as a resource for whomever might find it useful. 
 
 Html-braces is a safe, html-aware template engine. 
 
@@ -20,7 +17,7 @@ Aimed at server-side usage. Templates render strings of raw html, and preserve t
 Inspiration
 -----------
 
-Html-braces is similar in syntax to the handlebars and htmlbars template languages. It's html-awareness is similar to htmlbars. The use of s-expressions which lead me to turn html-braces into a lisp-like language (the part I like most about it at the moment) was inspired by this [note](https://gist.github.com/wycats/8116673) from the handlebars autor. 
+Html-braces is similar in syntax to the handlebars and htmlbars template languages. It's html-awareness is similar to htmlbars. The use of s-expressions which lead me to turn html-braces into a lisp-like language was inspired by this [note](https://gist.github.com/wycats/8116673) from the handlebars autor. 
 
 
 Quick guide
@@ -28,26 +25,27 @@ Quick guide
 
 Plain template. 
 
-	var Template = require('html-braces')
-	var t = new Template('<p>Hello there, {{ name }}!</p>')
-	console.log(t.render({ name:'joe' }))
-
+```javascript
+var Template = require('html-braces')
+var t = new Template('<p>Hello there, {{ name }}!</p>')
+console.log(t.render({ name:'joe' }))
+```
 
 Custom helper function.
 
-	var Template = require('html-braces')
-	
-	var helpers = 
-		{ capitalize: function(str) {
-				return str[0].toUpperCase()+str.substr(1)
-			}
-		}
-		
-	var conf = { helpers:helpers }
-	var t = new Template('<p>Hello there, {{ (capitalize name) }}!</p>', conf)
-	console.log(t.render({ name:'joe' }))
+```javascript
+var Template = require('html-braces')
 
+var helpers = {
+  capitalize: function(str) {
+    return str[0].toUpperCase()+str.substr(1)
+  }
+}
 
+var conf = { helpers:helpers }
+var t = new Template('<p>Hello there, {{ (capitalize name) }}!</p>', conf)
+console.log(t.render({ name:'joe' }))
+```
 
 Syntax
 ------
@@ -111,11 +109,3 @@ Limitations
 
 * PLAINTEXT data is not supported. This is only used in the deprecated html `<plaintext>` tag anyway. 
 
-
-
-[npm-image]:      https://img.shields.io/npm/v/html-braces.svg
-[npm-url]:        https://npmjs.org/package/html-braces
-[deps-image]:     https://img.shields.io/david/alwinb/html-braces.svg
-[deps-url]:       https://david-dm.org/alwinb/html-braces
-[dev-deps-image]: https://img.shields.io/david/dev/alwinb/html-braces.svg
-[dev-deps-url]:   https://david-dm.org/alwinb/html-braces?type=dev
